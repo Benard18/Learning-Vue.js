@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Vue</title>
-    <link rel="stylesheet" type="text/css" href="">
-</head>
-
-<body>
-    <div id="app">
-        <h1>Votes:{{ votes }}</h1>
-        <p>State:{{state}}</p>
-        <input v-model="state">
-        <button @click="increase">+</button>
-        <button @click="decrease">-</button>
-    </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="index.vue" type="text/javascript" charset="utf-8"></script>
-
+	<head>
+		<title>Vue</title>
+		<link rel="stylesheet" type="text/css" href="">
+	</head>
+	<body>
+		<div id="app">
+			<h1>Votes:{{ votes }}</h1>
+			<p>State:{{state}}</p>
+			<input v-model="state">
+			<button @click="increase">+</button>
+			<button @click="decrease">-</button>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="index.vue" type="text/javascript" charset="utf-8"></script>
 </html>
