@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Red</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div id="app">
+		<button type="" v-if="!follows" @click="follows = true" class="btn btn-success">Follow</button>
+		<button type="" v-else @click="follows = false" class="btn btn-danger">UnFollow</button>
+
+	<pre>
+		{{ $data }}
+	</pre>
+
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript">
+	var vm = new Vue({
+		el:'#app',
+		data: {
+			follows: false
+		}
+	});
+</script>
+</html>
